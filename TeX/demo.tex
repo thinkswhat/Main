@@ -1,0 +1,91 @@
+\documentclass{Krep}
+\title{Krep.cls模板使用示例}
+\author{KONG}
+\date{\today}
+\addbibresource{references.bib}
+\Lhead{左页眉示例}
+\Cfoot{\thepage}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+	在这个示例教程中，我们将演示如何使用Krep.cls模板来创建一个简单的中文文档。这个文档包括数学公式、表格、图片、列表、代码和参考文献等内容。
+\end{abstract}
+\section{数学公式示例}
+
+这是一个简单的数学公式示例：
+
+\begin{equation}
+	E = mc^2
+\end{equation}
+\section{表格示例}
+
+这是一个简单的表格示例：
+
+\begin{table}[h]
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\hline
+		项目 & 数量 & 单价 \\
+		\hline
+		A    & 5   & 20   \\
+		\hline
+		B    & 3   & 25   \\
+		\hline
+	\end{tabular}
+	\caption{一个简单的表格}
+\end{table}
+\section{图片示例}
+
+这是一个简单的图片示例：
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\textwidth]{example-image}
+	\caption{一个简单的图片}
+\end{figure}
+\section{列表示例}
+
+这是一个简单的列表示例：
+
+\begin{itemize}
+	\item 列表项 1
+	\item 列表项 2
+	\item 列表项 3
+\end{itemize}
+\section{代码示例}
+
+这是一个简单的Python代码示例：
+
+\begin{minted}[linenos=true, frame=single]{python}
+    def hello_world():
+    print("Hello, World!")
+    
+    hello_world()
+\end{minted}
+
+\section{伪代码示例}
+这是一个简单的算法伪代码示例：
+
+\begin{algorithm}[H]
+	\caption{计算斐波那契数列的第n项}
+	\KwIn{正整数$n$}
+	\KwOut{第$n$项斐波那契数列的值}
+	\SetKwProg{Fn}{Function}{\string:}{end}
+	\Fn{Fibonacci($n$)}{
+		\If{$n=1$ or $n=2$}{
+			\Return 1;
+		}
+		$F_1\leftarrow 1$; $F_2\leftarrow 1$;
+		\For{$i\leftarrow 3$ \KwTo $n$}{
+			$F_i\leftarrow F_{i-1} + F_{i-2}$;
+		}
+		\Return $F_n$;
+	}
+\end{algorithm}
+\section{参考文献示例}
+
+在这个示例中，我们引用了一篇文章\cite{ref1}作为示例。
+
+\printbibliography
+\end{document}
