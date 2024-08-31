@@ -1,0 +1,33 @@
+---
+title: "*Openair* 2"
+author: "Jianqi Yang"
+date: "2024-03-12"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Installation
+
+Installation can be done in the normal way:
+
+```{r cars}
+install.packages("openair")
+library(openair)
+```
+
+## Brief examples
+
+In future examples of this workshop, we will use the lab's Hangzhou pollution data.
+
+### Import data
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
